@@ -1,0 +1,24 @@
+local DiscordLib = loadstring(game:HttpGet('https://raw.githubusercontent.com/pop/Discord-Lib/main/Discord-Lib'))()
+local win = DiscordLib:Window("[Con Cặc hub v1]")
+local per = game:GetService("Players").LocalPlayer.Name
+DiscordLib:Notification("Premium Stars ⭐ Share", "Chào! ⭐" .. per .. ".test giùm tao", "chap nhận sài?")
+
+local serv = win:Server("Chon", "")
+local drops = serv:Channel("hack free")
+local dis = nil
+local aura = false
+
+drops:Button("kill aura ", function()
+getgenv().G = true
+getgenv().Creator = 'https://discord.gg/B3HqPPzFYr - HalloweenGaster'
+while getgenv().G and getgenv().Creator == 'https://discord.gg/B3HqPPzFYr - HalloweenGaster' do
+wait(0.9)
+sethiddenproperty(game.Players.LocalPlayer, "SimulationRadius", 112412400000)
+sethiddenproperty(game.Players.LocalPlayer, "MaxSimulationRadius", 112412400000)
+for i,d in pairs(game.Workspace:GetDescendants()) do
+    if d.ClassName == 'Humanoid' and d.Parent.Name ~= game.Players.LocalPlayer.Name then
+        d.Health = 0
+    end
+end
+end
+end)
